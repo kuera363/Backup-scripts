@@ -1,0 +1,11 @@
+# Sauvegardes différentielles du lundi au samedi à 2h du matin
+0 2 * * 1-6 /home/franco/Documents/Backup_Scripts/backup_script_diff.sh
+
+# Sauvegarde complète hebdomadaire le dimanche à 3h du matin
+0 3 * * 0 /home/franco/Documents/Backup_Scripts/backup_script_full.sh
+
+# Sauvegarde complète mensuelle le premier jour de chaque mois à 4h du matin
+0 4 1 * * /home/franco/Documents/Backup_Scripts/backup_script_full.sh
+
+# Nettoyage des anciennes sauvegardes tous les jours à 5h du matin
+0 5 * * * /home/franco/Documents/Backup_Scripts/backup_script_cleanup.sh

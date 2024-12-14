@@ -1,0 +1,9 @@
+Justification des heures choisies pour le fichier crontab
+
+Sauvegardes différentielles (2h du matin) : C'est une heure où l'utilisation du serveur est généralement faible, donc il y'a moins de risque d'impact sur les utilisateurs.
+
+Sauvegarde complète hebdomadaire (3h du matin) : Etant donné qu'elle est plus lourde, elle est programmée après les sauvegardes différentielles pour garantir qu'il n'y a pas de conflit.
+
+Sauvegarde complète mensuelle (4h du matin) : Etant donné qu'elle est plus longue, elle est placée après les tâches quotidiennes.
+
+Nettoyage (5h du matin) : ffectué après toutes les sauvegardes pour supprimer les fichiers inutiles sans interférer avec les processus en cours.
